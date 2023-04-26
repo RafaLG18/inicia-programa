@@ -50,5 +50,5 @@ int main(void)
   media_consumo=soma_consumo/habitantes;
   printf("\nMaior consumo: %.2f\nMenor consumo: %.2f\n",maior_consumo,menor_consumo);
   printf("Media de consumo por habitante: %.2f kwh p/ habitante\n",media_consumo);
-  printf("Consumo das categorias\nResidencial: %.2f kwh\nComercial: %.2f kwh\nIndustrial: %.2f\n",soma_residencial,soma_comercial,soma_industrial);
+  printf("Consumo das categorias\nResidencial: %.2f kwh\nComercial: %.2f kwh\nIndustrial: %.2f kwh\n",soma_residencial,soma_comercial,soma_industrial);
 }
