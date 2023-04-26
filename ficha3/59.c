@@ -15,7 +15,7 @@ int main(void)
   scanf("%f",&valor_kwh);
   
   for (int i = 1; i <= habitantes; i++) {
-    printf("Diga o consumo do mes:\n");
+    printf("\nDiga o consumo do mes do habitante %d:\n",i);
     scanf("%f",&consumo);
     printf("Codigo do consumidor:\n1 -> Residencial\n2 -> Comercial\n3 -> Industrial\nDigite o seu código: ");
     scanf("%i",&codigo_consumidor);
@@ -42,13 +42,13 @@ int main(void)
         soma_industrial=soma_industrial+consumo;
         break;
       default:
-        printf("Digite um valor possível do código de consumidor");
+        printf("Digite um valor possível do código de consumidor\n");
         break;
       }
   }
 
   media_consumo=soma_consumo/habitantes;
-  printf("Maior consumo: %.2f\nMenor consumo: %.2f\n",maior_consumo,menor_consumo);
+  printf("\nMaior consumo: %.2f\nMenor consumo: %.2f\n",maior_consumo,menor_consumo);
   printf("Media de consumo por habitante: %.2f kwh p/ habitante\n",media_consumo);
   printf("Consumo das categorias\nResidencial: %.2f kwh\nComercial: %.2f kwh\nIndustrial: %.2f\n",soma_residencial,soma_comercial,soma_industrial);
 }
